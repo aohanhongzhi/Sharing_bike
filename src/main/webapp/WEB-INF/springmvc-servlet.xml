@@ -19,9 +19,10 @@
 		<!-- 开启扫描controller -->
 		<context:component-scan base-package="cn.sharing_bike.controller"></context:component-scan>
 		<!-- 配置访问静态资源 -->
-		<mvc:resources location="/js/" mapping="/js/**"/>
-		<mvc:resources location="/css/" mapping="/css/**"/>
-		<mvc:resources location="/img/" mapping="/img/**"/>
+		<mvc:resources location="/fonts/" mapping="/fonts/**"/>
+		<mvc:resources location="/images/" mapping="/images/**"/>
+		<mvc:resources location="/styles/" mapping="/styles/**"/>
+		<mvc:resources location="/script/" mapping="/script/**"/>
 		<!-- 配置视图解析器 -->
 		<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 			<property name="prefix" value="/WEB-INF/jsp/"></property>
