@@ -7,7 +7,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-    <title>Dashboard | Dashboard</title>
+    <title>首页 | 单车调度系统</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,19 +31,6 @@
 </head>
 <body>
 <div>
-    <!--BEGIN THEME SETTING-->
-    <div id="theme-setting">
-        <a href="#" data-toggle="dropdown" data-step="1" data-intro="&lt;b&gt;Many styles&lt;/b&gt; and &lt;b&gt;colors&lt;/b&gt; be created for you. Let choose one and enjoy it!"
-           data-position="left" class="btn-theme-setting"><i class="fa fa-cog"></i></a>
-        <div class="content-theme-setting">
-            <select id="list-style" class="form-control">
-                <option value="style1">Flat Squared style</option>
-                <option value="style2">Flat Rounded style</option>
-                <option value="style3" selected="selected">Flat Border style</option>
-            </select>
-        </div>
-    </div>
-    <!--END THEME SETTING-->
     <!--BEGIN BACK TO TOP-->
     <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
     <!--END BACK TO TOP-->
@@ -52,40 +39,47 @@
         <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
             <div class="navbar-header">
                 <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span class="logo-text">KAdmin</span><span style="display: none" class="logo-text-icon">µ</span></a></div>
+                <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span
+                        class="logo-text">单车调度系统</span><span style="display: none" class="logo-text-icon">µ</span></a>
+            </div>
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
 
                 <form id="topbar-search" action="" method="" class="hidden-sm hidden-xs">
-                    <div class="input-icon right text-white"><a href="#"><i class="fa fa-search"></i></a><input type="text" placeholder="Search here..." class="form-control text-white"/></div>
+                    <div class="input-icon right text-white"><a href="#"><i class="fa fa-search"></i></a><input
+                            type="text" placeholder="搜索内容..." class="form-control text-white"/></div>
                 </form>
-                <div class="news-update-box hidden-xs"><span class="text-uppercase mrm pull-left text-white">News:</span>
-                    <ul id="news-update" class="ticker list-unstyled">
-                        <li>Welcome to KAdmin - Responsive Multi-Style Admin Template</li>
-                        <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.</li>
-                    </ul>
-                </div>
+
                 <ul class="nav navbar navbar-top-links navbar-right mbn">
-                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-bell fa-fw"></i><span class="badge badge-green">3</span></a>
+                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i
+                            class="fa fa-bell fa-fw"></i><span class="badge badge-green"></span></a>
 
                     </li>
-                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-envelope fa-fw"></i><span class="badge badge-orange">7</span></a>
+                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i
+                            class="fa fa-envelope fa-fw"></i><span class="badge badge-orange"></span></a>
 
                     </li>
-                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i class="fa fa-tasks fa-fw"></i><span class="badge badge-yellow">8</span></a>
-
+                    <li class="dropdown"><a data-hover="dropdown" href="#" class="dropdown-toggle"><i
+                            class="fa fa-tasks fa-fw"></i><span class="badge badge-yellow"></span></a>
                     </li>
-                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">Robert John</span>&nbsp;<span class="caret"></span></a>
+                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img
+                            src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span
+                            class="hidden-xs">赵 耀</span>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-user pull-right">
                             <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
                             <li><a href="#"><i class="fa fa-calendar"></i>My Calendar</a></li>
-                            <li><a href="#"><i class="fa fa-envelope"></i>My Inbox<span class="badge badge-danger">3</span></a></li>
-                            <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span class="badge badge-success">7</span></a></li>
+                            <li><a href="#"><i class="fa fa-envelope"></i>My Inbox<span
+                                    class="badge badge-danger"></span></a></li>
+                            <li><a href="#"><i class="fa fa-tasks"></i>My Tasks<span
+                                    class="badge badge-success">1</span></a></li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="fa fa-lock"></i>Lock Screen</a></li>
                             <li><a href="Login.html"><i class="fa fa-key"></i>Log Out</a></li>
                         </ul>
                     </li>
-                    <li id="topbar-chat" class="hidden-xs"><a href="javascript:void(0)" data-step="4" data-intro="&lt;b&gt;Form chat&lt;/b&gt; keep you connecting with other coworker" data-position="left" class="btn-chat"><i class="fa fa-comments"></i><span class="badge badge-info">3</span></a></li>
+                    <li id="topbar-chat" class="hidden-xs"><a href="javascript:void(0)" data-step="4"
+                                                              data-intro="&lt;b&gt;Form chat&lt;/b&gt; keep you connecting with other coworker"
+                                                              data-position="left" class="btn-chat"><i
+                            class="fa fa-comments"></i><span class="badge badge-info"> </span></a></li>
                 </ul>
             </div>
         </nav>
@@ -131,62 +125,29 @@
                 <ul id="side-menu" class="nav">
 
                     <div class="clearfix"></div>
-                    <li class="active"><a href="dashboard.html"><i class="fa fa-tachometer fa-fw">
+                    <li class="active"><a href="index.jsp"><i class="fa fa-tachometer fa-fw">
                         <div class="icon-bg bg-orange"></div>
-                    </i><span class="menu-title">Dashboard</span></a></li>
-                    <li><a href="Layout.html"><i class="fa fa-desktop fa-fw">
+                    </i><span class="menu-title">首页</span></a></li>
+                    <li><a href="show_map.jsp"><i class="fa fa-desktop fa-fw">
                         <div class="icon-bg bg-pink"></div>
-                    </i><span class="menu-title">Layouts</span></a>
+                    </i><span class="menu-title">地图界面</span></a>
 
                     </li>
-                    <li><a href="UIElements.html"><i class="fa fa-send-o fa-fw">
+                    <li><a href="bike_data.jsp"><i class="fa fa-send-o fa-fw">
                         <div class="icon-bg bg-green"></div>
-                    </i><span class="menu-title">UI Elements</span></a>
+                    </i><span class="menu-title">单车数据</span></a>
 
                     </li>
-                    <li><a href="Forms.html"><i class="fa fa-edit fa-fw">
+                    <li><a href="manage.jsp"><i class="fa fa-edit fa-fw">
                         <div class="icon-bg bg-violet"></div>
-                    </i><span class="menu-title">Forms</span></a>
+                    </i><span class="menu-title">管理中心</span></a>
 
                     </li>
-                    <li><a href="Tables.html"><i class="fa fa-th-list fa-fw">
+                    <li><a href="contact.jsp"><i class="fa fa-th-list fa-fw">
                         <div class="icon-bg bg-blue"></div>
-                    </i><span class="menu-title">Tables</span></a>
+                    </i><span class="menu-title">与我联系</span></a>
 
                     </li>
-                    <li><a href="DataGrid.html"><i class="fa fa-database fa-fw">
-                        <div class="icon-bg bg-red"></div>
-                    </i><span class="menu-title">Data Grids</span></a>
-
-                    </li>
-                    <li><a href="Pages.html"><i class="fa fa-file-o fa-fw">
-                        <div class="icon-bg bg-yellow"></div>
-                    </i><span class="menu-title">Pages</span></a>
-
-                    </li>
-                    <li><a href="Extras.html"><i class="fa fa-gift fa-fw">
-                        <div class="icon-bg bg-grey"></div>
-                    </i><span class="menu-title">Extras</span></a>
-
-                    </li>
-                    <li><a href="Dropdown.html"><i class="fa fa-sitemap fa-fw">
-                        <div class="icon-bg bg-dark"></div>
-                    </i><span class="menu-title">Multi-Level Dropdown</span></a>
-
-                    </li>
-                    <li><a href="Email.html"><i class="fa fa-envelope-o">
-                        <div class="icon-bg bg-primary"></div>
-                    </i><span class="menu-title">Email</span></a>
-
-                    </li>
-                    <li><a href="Charts.html"><i class="fa fa-bar-chart-o fa-fw">
-                        <div class="icon-bg bg-orange"></div>
-                    </i><span class="menu-title">Charts</span></a>
-
-                    </li>
-                    <li><a href="Animation.html"><i class="fa fa-slack fa-fw">
-                        <div class="icon-bg bg-green"></div>
-                    </i><span class="menu-title">Animations</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -196,30 +157,22 @@
             <div class="chat-inner">
                 <h2 class="chat-header">
                     <a href="javascript:;" class="chat-form-close pull-right"><i class="glyphicon glyphicon-remove">
-                    </i></a><i class="fa fa-user"></i>&nbsp; Chat &nbsp;<span class="badge badge-info">3</span></h2>
+                    </i></a><i class="fa fa-user"></i>&nbsp; 消息 &nbsp;<span class="badge badge-info"></span></h2>
                 <div id="group-1" class="chat-group">
-                    <strong>Favorites</strong><a href="#"><span class="user-status is-online"></span> <small>
-                    Verna Morton</small> <span class="badge badge-info">2</span></a><a href="#"><span
-                        class="user-status is-online"></span> <small>Delores Blake</small> <span class="badge badge-info is-hidden">
-                                    0</span></a><a href="#"><span class="user-status is-busy"></span> <small>Nathaniel Morris</small>
+                    <strong>待办事物</strong><a href="#"><span class="user-status is-online"></span> <small>
+                    通知</small> <span class="badge badge-info">1</span></a><a href="#"><span
+                        class="user-status is-online"></span> <small>会议</small> <span class="badge badge-info is-hidden">
+                                    0</span></a><a href="#"><span class="user-status is-busy"></span> <small>日程</small>
                     <span class="badge badge-info is-hidden">0</span></a><a href="#"><span class="user-status is-idle"></span>
-                    <small>Boyd Bridges</small> <span class="badge badge-info is-hidden">0</span></a><a
-                        href="#"><span class="user-status is-offline"></span> <small>Meredith Houston</small>
+                    <small>人事</small> <span class="badge badge-info is-hidden">0</span></a><a
+                        href="#"><span class="user-status is-offline"></span> <small>财务</small>
                     <span class="badge badge-info is-hidden">0</span></a></div>
                 <div id="group-2" class="chat-group">
-                    <strong>Office</strong><a href="#"><span class="user-status is-busy"></span> <small>
-                    Ann Scott</small> <span class="badge badge-info is-hidden">0</span></a><a href="#"><span
-                        class="user-status is-offline"></span> <small>Sherman Stokes</small> <span class="badge badge-info is-hidden">
-                                    0</span></a><a href="#"><span class="user-status is-offline"></span> <small>Florence
-                    Pierce</small> <span class="badge badge-info">1</span></a></div>
-                <div id="group-3" class="chat-group">
-                    <strong>Friends</strong><a href="#"><span class="user-status is-online"></span> <small>
-                    Willard Mckenzie</small> <span class="badge badge-info is-hidden">0</span></a><a
-                        href="#"><span class="user-status is-busy"></span> <small>Jenny Frazier</small>
-                    <span class="badge badge-info is-hidden">0</span></a><a href="#"><span class="user-status is-offline"></span>
-                    <small>Chris Stewart</small> <span class="badge badge-info is-hidden">0</span></a><a
-                        href="#"><span class="user-status is-offline"></span> <small>Olivia Green</small>
-                    <span class="badge badge-info is-hidden">0</span></a></div>
+                    <strong>办公室</strong><a href="#"><span class="user-status is-busy"></span> <small>
+                    人事科</small> <span class="badge badge-info is-hidden">0</span></a><a href="#"><span
+                        class="user-status is-offline"></span> <small>财务科</small> <span class="badge badge-info is-hidden">
+                                    0</span></a><a href="#"><span class="user-status is-offline"></span> <small>后勤处</small>
+                    <span class="badge badge-info">1</span></a></div>
             </div>
             <div id="chat-box" style="top: 400px">
                 <div class="chat-box-header">
@@ -231,17 +184,10 @@
                     <ul class="chat-box-body">
                         <li>
                             <p>
-                                <img src="images/avatar/128.jpg" class="avt" /><span class="user">John Doe</span><span
+                                <img src="images/avatar/128.jpg" class="avt" /><span class="user">陈飞</span><span
                                     class="time">09:33</span></p>
                             <p>
-                                Hi Swlabs, we have some comments for you.</p>
-                        </li>
-                        <li class="odd">
-                            <p>
-                                <img src="images/avatar/48.jpg" class="avt" /><span class="user">Swlabs</span><span
-                                    class="time">09:33</span></p>
-                            <p>
-                                Hi, we're listening you...</p>
+                                有些事情需要你过来一下.</p>
                         </li>
                     </ul>
                 </div>
@@ -257,12 +203,13 @@
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                 <div class="page-header pull-left">
                     <div class="page-title">
-                        Dashboard</div>
+                        首页
+                    </div>
                 </div>
                 <ol class="breadcrumb page-breadcrumb pull-right">
                     <li><i class="fa fa-home"></i>&nbsp;<a href="dashboard.html">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="hidden"><a href="#">Dashboard</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="active">Dashboard</li>
+                    <li class="hidden"><a href="#">首页</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="active">首页</li>
                 </ol>
                 <div class="clearfix">
                 </div>
@@ -279,10 +226,10 @@
                                         <i class="icon fa fa-shopping-cart"></i>
                                     </p>
                                     <h4 class="value">
-                                            <span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">
-                                            </span><span>$</span></h4>
+                                        <span data-counter="" data-start="10" data-end="50" data-step="1"
+                                              data-duration="0"></span><span>千辆</span></h4>
                                     <p class="description">
-                                        Profit description</p>
+                                        当前投放车辆</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                              style="width: 80%;" class="progress-bar progress-bar-success">
@@ -298,9 +245,9 @@
                                         <i class="icon fa fa-money"></i>
                                     </p>
                                     <h4 class="value">
-                                        <span>215</span><span>$</span></h4>
+                                        <span>215</span><span>万元</span></h4>
                                     <p class="description">
-                                        Income detail</p>
+                                        已投入资金</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                              style="width: 60%;" class="progress-bar progress-bar-info">
@@ -318,7 +265,7 @@
                                     <h4 class="value">
                                         <span>215</span></h4>
                                     <p class="description">
-                                        Task completed</p>
+                                        合作企业数量</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                              style="width: 50%;" class="progress-bar progress-bar-danger">
@@ -336,7 +283,7 @@
                                     <h4 class="value">
                                         <span>128</span></h4>
                                     <p class="description">
-                                        Visitor description</p>
+                                        已运行天数</p>
                                     <div class="progress progress-sm mbn">
                                         <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
                                              style="width: 70%;" class="progress-bar progress-bar-warning">
@@ -353,45 +300,43 @@
                                     <div class="row">
                                         <div class="col-md-8">
                                             <h4 class="mbs">
-                                                Network Performance</h4>
-                                            <p class="help-block">
-                                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+                                                近6个月单车使用情况</h4>
                                             <div id="area-chart-spline" style="width: 100%; height: 300px">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <h4 class="mbm">
-                                                Server Status</h4>
-                                            <span class="task-item">CPU Usage (25 - 32 cpus)<small class="pull-right text-muted">40%</small><div
+                                                各地区情况</h4>
+                                            <span class="task-item">江宁区<small class="pull-right text-muted">40%</small><div
                                                     class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 40%;" class="progress-bar progress-bar-orange">
                                                         <span class="sr-only">40% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>Memory Usage (2.5GB)<small class="pull-right text-muted">60%</small><div
+                                                </span><span>玄武区<small class="pull-right text-muted">60%</small><div
                                                 class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 60%;" class="progress-bar progress-bar-blue">
                                                         <span class="sr-only">60% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>Disk Usage (C:\ 120GB , D:\ 430GB)<small class="pull-right text-muted">55%</small><div
+                                                </span><span>鼓楼区<small class="pull-right text-muted">55%</small><div
                                                 class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 55%;" class="progress-bar progress-bar-green">
                                                         <span class="sr-only">55% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>Domain (2/5)<small class="pull-right text-muted">66%</small><div class="progress progress-sm">
+                                                </span><span>秦淮区<small class="pull-right text-muted">66%</small><div class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 66%;" class="progress-bar progress-bar-yellow">
                                                         <span class="sr-only">66% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>Database (90/100)<small class="pull-right text-muted">90%</small><div
+                                                </span><span>雨花台区<small class="pull-right text-muted">90%</small><div
                                                 class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 90%;" class="progress-bar progress-bar-pink">
                                                         <span class="sr-only">90% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>Email Account (25/50)<small class="pull-right text-muted">50%</small><div
+                                                </span><span>仙林区<small class="pull-right text-muted">50%</small><div
                                                 class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 50%;" class="progress-bar progress-bar-violet">
@@ -407,7 +352,7 @@
                             <div class="portlet box">
                                 <div class="portlet-header">
                                     <div class="caption">
-                                        Chats</div>
+                                        公告</div>
                                 </div>
                                 <div class="portlet-body">
                                     <div class="chat-scroller">
@@ -416,273 +361,36 @@
                                                 <img src="images/avatar/48.jpg" class="avatar img-responsive" />
                                                 <div class="message">
                                                     <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                        class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                            </li>
-                                            <li class="out">
-                                                <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                <div class="message">
-                                                    <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                        class="chat-datetime">at July 06, 2014 18:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                            </li>
-                                            <li class="in">
-                                                <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                <div class="message">
-                                                    <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                        class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                            </li>
-                                            <li class="out">
-                                                <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                <div class="message">
-                                                    <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                        class="chat-datetime">at July 06, 2014 18:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                            </li>
-                                            <li class="in">
-                                                <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                <div class="message">
-                                                    <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                        class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
+                                                        class="chat-datetime">at Dec 06, 2017 17:06</span><span
+                                                        class="chat-body">今天，ofo宣布正式登陆深圳，并将与深圳地铁建立战略合作伙伴关系，双方将在多个层面展开密切合作。
+                                                    此次合作将利用ofo建设共享单车平台的技术和经验，结合深铁集团地面站点资源优势，在深铁集团地铁站点地面出入口划定共享
+                                                    单车停车专区，供ofo进行车辆投放，为城市居民提供完整的城市公共交通解决方案。在运维层面，ofo还将协助有关部门进行非
+                                                    机动车辆的秩序维护，帮助解决自行车乱停乱放问题。
+                                                    除了700bike定制款小黄车，ofo在深圳连接的单车主要为全新升级的ofo 3.0版本。延续了轻便好骑的产品理念与明黄色的设计语言，
+                                                    新一代小黄车使用了实心胎、三角型把立、可调节座椅、前后双抱刹系统等，在安全性、耐用性、功能性、设计感上都获得了提升，
+                                                    同时降低了维护成本。年底前，ofo在深圳将连接6万辆单车。
+                                                </span>
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
+                                    <br><br><br>
                                     <div class="chat-form">
                                         <div class="input-group">
-                                            <input id="input-chat" type="text" placeholder="Type a message here..." class="form-control" /><span
-                                                id="btn-chat" class="input-group-btn">
-                                                    <button type="button" class="btn btn-green">
-                                                        <i class="fa fa-check"></i>
-                                                    </button>
-                                                </span>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mbl">
-                        <div class="col-lg-4">
-                            <div class="panel">
-                                <div class="panel-body">
-                                    <div class="profile">
-                                        <div style="margin-bottom: 15px" class="row">
-                                            <div class="col-xs-12 col-sm-8">
-                                                <h2>
-                                                    John Doe</h2>
-                                                <p>
-                                                    <strong>About:</strong> Web Designer / UI.</p>
-                                                <p>
-                                                    <strong>Hobbies:</strong> Read, out with friends, listen to music, draw and learn
-                                                    new things.</p>
-                                                <p>
-                                                    <strong class="mrs">Skills:</strong><span class="label label-green mrs">html5</span><span
-                                                        class="label label-green mrs">css3</span><span class="label label-green mrs">jquery</span></p>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 text-center">
-                                                <figure><img src="images/avatar/128.jpg" alt="" style="display: inline-block" class="img-responsive img-circle"/>
-                                                    <figcaption class="ratings"><p><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star-o"></span></a></p></figcaption>
-                                                </figure>
-                                            </div>
-                                        </div>
-                                        <div class="row text-center divider">
-                                            <div class="col-xs-12 col-sm-4 emphasis">
-                                                <h2>
-                                                    <strong>20,7K</strong></h2>
-                                                <p>
-                                                    <small>Followers</small>
-                                                </p>
-                                                <button class="btn btn-yellow btn-block">
-                                                    <span class="fa fa-plus-circle"></span>&nbsp; Follow
-                                                </button>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 emphasis">
-                                                <h2>
-                                                    <strong>245</strong></h2>
-                                                <p>
-                                                    <small>Following</small>
-                                                </p>
-                                                <button class="btn btn-blue btn-block">
-                                                    <span class="fa fa-user"></span>&nbsp; Profile
-                                                </button>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 emphasis">
-                                                <h2>
-                                                    <strong>43</strong></h2>
-                                                <p>
-                                                    <small>Snippets</small>
-                                                </p>
-                                                <div class="btn-group dropup">
-                                                    <button type="button" data-toggle="dropdown" class="btn btn-orange dropdown-toggle">
-                                                        <span class="fa fa-gear"></span>&nbsp; Options
-                                                    </button>
-                                                    <ul role="menu" class="dropdown-menu pull-right text-left">
-                                                        <li><a href="#"><span class="fa fa-envelope"></span>&nbsp; Send an email</a></li>
-                                                        <li><a href="#"><span class="fa fa-list"></span>&nbsp; Add or remove from a list</a></li>
-                                                        <li class="divider"></li>
-                                                        <li><a href="#"><span class="fa fa-warning"></span>&nbsp; Report this user for spam</a></li>
-                                                        <li class="divider"></li>
-                                                        <li><a href="#" role="button" class="btn disabled">Unfollow</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="portlet box">
-                                <div class="portlet-header">
-                                    <div class="caption">
-                                        Todo List</div>
-                                </div>
-                                <div style="overflow: hidden;" class="portlet-body">
-                                    <ul class="todo-list sortable">
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                Sed ut perspiciatis unde omnis iste</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
-                                                minus id</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                Et harum quidem rerum facilis est</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                        <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                            <div class="todo-check pull-left">
-                                                <input type="checkbox" value="" /></div>
-                                            <div class="todo-title">
-                                                Excepteur sint occaecat cupidatat non proident</div>
-                                            <div class="todo-actions pull-right clearfix">
-                                                <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                            </i></a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                    <br><br>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8">
-                            <div class="timeline-centered timeline-sm">
-                                <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-10T03:45" class="timeline-time"><span>12:45 AM</span><span>Today</span></time>
-                                        <div class="timeline-icon bg-violet"><i class="fa fa-exclamation"></i></div>
-                                        <div class="timeline-label"><h4 class="timeline-title">New Project</h4>
-
-                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial.</p></div>
-                                    </div>
-                                </article>
-                                <article class="timeline-entry left-aligned">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-10T03:45" class="timeline-time"><span>9:15 AM</span><span>Today</span></time>
-                                        <div class="timeline-icon bg-green"><i class="fa fa-group"></i></div>
-                                        <div class="timeline-label bg-green"><h4 class="timeline-title">Job Meeting</h4>
-
-                                            <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette.</p></div>
-                                    </div>
-                                </article>
-                                <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-09T13:22" class="timeline-time"><span>8:20 PM</span><span>04/03/2013</span></time>
-                                        <div class="timeline-icon bg-orange"><i class="fa fa-paper-plane"></i></div>
-                                        <div class="timeline-label bg-orange"><h4 class="timeline-title">Daily Feeds</h4>
-
-                                            <p><img src="http://lorempixel.com/45/45/nature/3/" alt="" class="timeline-img pull-left"/>Parsley amaranth tigernut silver beet maize fennel spinach ricebean black-eyed. Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial.</p></div>
-                                    </div>
-                                    <div class="timeline-entry-inner">
-                                        <div style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);" class="timeline-icon"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <!--<div class="col-lg-4">
-                        <div id="my-calendar"></div>
-                    </div>-->
-                        <div class="col-lg-4">
-                            <div class="page-content">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="portlet box">
-                                            <div class="portlet-header">
-                                                <div class="caption">
-                                                    Pie with gradient fill</div>
-                                                <div class="tools">
-                                                    <i class="fa fa-chevron-up"></i><i data-toggle="modal" data-target="#modal-config"
-                                                                                       class="fa fa-cog"></i><i class="fa fa-refresh"></i><i class="fa fa-times"></i>
-                                                </div>
-                                            </div>
-                                            <div class="portlet-body">
-                                                <div id="pie-with-gradient-fill">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-lg-12">
                             <div class="portlet box">
                                 <div class="portlet-header">
                                     <div class="caption">
-                                        Scatter plot</div>
+                                        系统运行性能实时监测
+                                    </div>
                                     <div class="tools">
                                         <i class="fa fa-chevron-up"></i><i data-toggle="modal" data-target="#modal-config"
                                                                            class="fa fa-cog"></i><i class="fa fa-refresh"></i><i class="fa fa-times"></i>
@@ -699,10 +407,6 @@
             </div>
             <!--END CONTENT-->
             <!--BEGIN FOOTER-->
-            <div id="footer">
-                <div class="copyright">
-                    <a href="#">2014 © KAdmin Responsive Multi-Purpose Template</a> More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
-            </div>
             <!--END FOOTER-->
         </div>
         <!--END PAGE WRAPPER-->
