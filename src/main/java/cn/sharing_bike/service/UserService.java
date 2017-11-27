@@ -1,5 +1,7 @@
 package cn.sharing_bike.service;
 
+import cn.sharing_bike.bean.User;
+
 public interface UserService {
 	/**
 	 * 根据用户名判断该用户是否存在
@@ -13,5 +15,10 @@ public interface UserService {
 	 * @return
 	 */
 	String queryPasswdByName(String uname);
-
+	/**
+	 * 注册用户
+	 * @param user
+	 * @throws Exception
+	 */
+	void registUser(User user) throws Exception;
 }

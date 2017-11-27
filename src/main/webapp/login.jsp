@@ -39,12 +39,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 </head>
 <body>
+<input id="mark" type="hidden" value="<%=request.getParameter("mark")%>">
 <h1 style="font-weight: 900">单车调度系统</h1>
 <div class="w3layouts" style="margin-top: -20px">
     <div class="signin-agile">
         <h2 style="font-weight: 600">登录</h2>
-        <form action="${pageContext.request.contextPath }/login" method="post">
-            <input type="text" name="name" class="name" placeholder="用户名" required="">
+        <form action="${pageContext.request.contextPath }/user/login" method="post">
+            <input type="text" name="username" class="name" placeholder="用户名" required="">
             <input type="password" name="password" class="password" placeholder="密码" required="">
             <ul>
                 <li>
@@ -70,14 +71,21 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="pop-up">
     <div id="small-dialog" class="mfp-hide book-form">
         <h3>注册 </h3>
-        <form action="#" method="post">
-            <input type="text" name="Name" placeholder="用户名" required=""/>
-            <input type="text" name="Email" class="email" placeholder="邮件" required=""/>
+        <form action="${pageContext.request.contextPath }/user/regist" method="post">
+            <input type="text" name="username" placeholder="用户名" required=""/>
+            <input type="text" name="user_email" class="email" placeholder="邮件" required=""/>
             <input type="password" name="Password" class="password" placeholder="密码" required=""/>
-            <input type="password" name="Password" class="password" placeholder="重复密码" required=""/>
+            <input type="password" name="Password2" class="password" placeholder="重复密码" required=""/>
             <input type="submit" value="点击注册">
         </form>
     </div>
 </div>
 </body>
+<script type="text/javascript">
+	var mark=$("#mark").attr("value");
+	if (mark==1){
+	//注册成功
+	alert("注册成功！请登录")
+	}
+</script>
 </html>

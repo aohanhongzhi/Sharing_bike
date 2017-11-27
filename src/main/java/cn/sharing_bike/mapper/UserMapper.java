@@ -9,4 +9,9 @@ public interface UserMapper {
 	 * @return
 	 */
 	User queryUserByName(String uname);
+	/*
+	 * 注册
+	 */
+	void registUser(User user);
+	
 }
