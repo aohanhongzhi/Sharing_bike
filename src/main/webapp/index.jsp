@@ -1,4 +1,5 @@
 <%@ page language="java" pageEncoding="utf-8" %>
+<%@taglib prefix="shrio" uri="http://shiro.apache.org/tags" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -12,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/icons/favicon.ico">
-    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" href="${pageContext.request.contextPath }/images/icons/favicon.png">
     <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
     <!--Loading bootstrap css-->
@@ -31,6 +32,7 @@
 </head>
 <body>
 <div>
+	
     <!--BEGIN BACK TO TOP-->
     <a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
     <!--END BACK TO TOP-->
@@ -63,7 +65,12 @@
                     </li>
                     <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img
                             src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span
-                            class="hidden-xs">赵 耀</span>&nbsp;<span class="caret"></span></a>
+                            class="hidden-xs">
+                            	<shrio:guest>未登陆</shrio:guest>
+                            	<shrio:authenticated>
+                            		<shrio:principal></shrio:principal>
+                            	</shrio:authenticated>
+                            </span>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-user pull-right">
                             <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
                             <li><a href="#"><i class="fa fa-calendar"></i>My Calendar</a></li>
@@ -73,7 +80,7 @@
                                     class="badge badge-success">1</span></a></li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="fa fa-lock"></i>Lock Screen</a></li>
-                            <li><a href="login.jsp"><i class="fa fa-key"></i>Log Out</a></li>
+                            <li><a href="${pageContext.request.contextPath }/user/logout"><i class="fa fa-key"></i>Log Out</a></li>
                         </ul>
                     </li>
                     <li id="topbar-chat" class="hidden-xs"><a href="javascript:void(0)" data-step="4"
@@ -448,6 +455,7 @@
 <script src="script/charts-highchart-more.js"></script>
 <!--CORE JAVASCRIPT-->
 <script src="script/main.js"></script>
+
 
 </body>
 </html>

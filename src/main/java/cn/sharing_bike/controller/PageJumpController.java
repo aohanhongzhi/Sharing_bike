@@ -10,7 +10,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
  */
 @Controller
 public class PageJumpController {
-
+	
+	@RequestMapping("/index")
+	public String index()throws Exception{
+		return "forward:/index.jsp";
+	}
+	
 	@RequestMapping(value = "/show_map",method = RequestMethod.GET)
 	public String show_map() throws Exception{
 		return "forward:/show_map.jsp";

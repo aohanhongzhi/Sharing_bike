@@ -2,6 +2,7 @@ package cn.sharing_bike.serviceImpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import cn.sharing_bike.bean.User;
 import cn.sharing_bike.mapper.UserMapper;
 import cn.sharing_bike.service.UserService;
 /**
@@ -32,6 +33,14 @@ public class UserServiceImpl implements UserService {
 	public String queryPasswdByName(String uname) {
 		// TODO Auto-generated method stub
 		return userMapper.queryUserByName(uname).getPassword();
+	}
+	/**
+	 * 注册用户
+	 */
+	@Override
+	public void registUser(User user) throws Exception {
+		// TODO Auto-generated method stub
+		userMapper.registUser(user);
 	}
 
 }

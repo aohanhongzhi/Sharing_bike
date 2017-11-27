@@ -6,7 +6,15 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 
 <mapper namespace="cn.sharing_bike.mapper.UserMapper">
 
-	<select id="queryUserByName" parameterType="cn.sharing_bike.bean.User" resultType="cn.sharing_bike.bean.User">
+	<!-- 通过用户名查询用户 -->
+	<select id="queryUserByName" parameterType="java.lang.String" resultType="cn.sharing_bike.bean.User">
 		select * from user where username=#{username}
 	</select>
+	
+	<!-- 注册用户 -->
+	<insert id="registUser" parameterType="cn.sharing_bike.bean.User">
+		insert into user(username,password,user_email) values(#{username},#{password},#{user_email})
+	</insert>
+	
+	
 </mapper>
