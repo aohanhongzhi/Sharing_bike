@@ -37,6 +37,6 @@ public class LoginController {
 	}
 	@RequestMapping("/index")
 	public String index()throws Exception{
-		return "/index";
+		return "forward:/index.jsp";
 	}
 }
