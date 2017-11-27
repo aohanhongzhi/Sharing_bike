@@ -73,7 +73,7 @@
                                     class="badge badge-success">1</span></a></li>
                             <li class="divider"></li>
                             <li><a href="#"><i class="fa fa-lock"></i>Lock Screen</a></li>
-                            <li><a href="Login.html"><i class="fa fa-key"></i>Log Out</a></li>
+                            <li><a href="login.jsp"><i class="fa fa-key"></i>Log Out</a></li>
                         </ul>
                     </li>
                     <li id="topbar-chat" class="hidden-xs"><a href="javascript:void(0)" data-step="4"
@@ -196,7 +196,6 @@
             </div>
         </div>
         <!--END CHAT FORM-->
-        <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >手机网站模板</a></div>
         <!--BEGIN PAGE WRAPPER-->
         <div id="page-wrapper">
             <!--BEGIN TITLE & BREADCRUMB PAGE-->
@@ -207,7 +206,7 @@
                     </div>
                 </div>
                 <ol class="breadcrumb page-breadcrumb pull-right">
-                    <li><i class="fa fa-home"></i>&nbsp;<a href="dashboard.html">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li><i class="fa fa-home"></i>&nbsp;<a href="index.jsp">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
                     <li class="hidden"><a href="#">首页</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
                     <li class="active">首页</li>
                 </ol>
