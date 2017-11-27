@@ -12,7 +12,7 @@ $(function () {
             },
 
             title: {
-                text: 'Speedometer'
+                text: '性能指标'
             },
 
             pane: {
@@ -51,7 +51,7 @@ $(function () {
             // the value axis
             yAxis: {
                 min: 0,
-                max: 200,
+                max: 100,
 
                 minorTickInterval: 'auto',
                 minorTickWidth: 1,
@@ -69,28 +69,28 @@ $(function () {
                     rotation: 'auto'
                 },
                 title: {
-                    text: 'km/h'
+                    text: '%'
                 },
                 plotBands: [{
                     from: 0,
-                    to: 120,
+                    to: 60,
                     color: '#55BF3B' // green
                 }, {
-                    from: 120,
-                    to: 160,
+                    from: 60,
+                    to: 80,
                     color: '#DDDF0D' // yellow
                 }, {
-                    from: 160,
-                    to: 200,
+                    from: 80,
+                    to: 100,
                     color: '#DF5353' // red
                 }]
             },
 
             series: [{
-                name: 'Speed',
+                name: '当前使用率',
                 data: [80],
                 tooltip: {
-                    valueSuffix: ' km/h'
+                    valueSuffix: ' %'
                 }
             }]
 
@@ -101,10 +101,10 @@ $(function () {
                 setInterval(function () {
                     var point = chart.series[0].points[0],
                         newVal,
-                        inc = Math.round((Math.random() - 0.5) * 20);
+                        inc = Math.round((Math.random() - 0.5) * 10);
 
                     newVal = point.y + inc;
-                    if (newVal < 0 || newVal > 200) {
+                    if (newVal < 0 || newVal > 100) {
                         newVal = point.y - inc;
                     }
 

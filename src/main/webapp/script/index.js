@@ -17,15 +17,15 @@ $(function () {
     //END TO-DO-LIST
 
     //BEGIN AREA CHART SPLINE
-    var d6_1 = [["Jan", 67],["Feb", 91],["Mar", 36],["Apr", 150],["May", 28],["Jun", 123],["Jul", 38]];
-    var d6_2 = [["Jan", 59],["Feb", 49],["Mar", 45],["Apr", 94],["May", 76],["Jun", 22],["Jul", 31]];
+    var d6_1 = [["Jan", 67],["Feb", 85],["Mar", 36],["Apr", 120],["May", 28],["Jun", 75],["Jul", 38]];
+    var d6_2 = [["Jan", 59],["Feb", 49],["Mar", 45],["Apr", 94],["May", 76],["Jun", 53],["Jul", 31]];
     $.plot("#area-chart-spline", [{
         data: d6_1,
-        label: "Upload",
+        label: "人流总量",
         color: "#ffce54"
     },{
         data: d6_2,
-        label: "Download",
+        label: "用车数量",
         color: "#01b6ad"
     }], {
         series: {
