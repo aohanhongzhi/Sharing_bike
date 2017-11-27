@@ -4,6 +4,9 @@ package cn.sharing_bike.controller;
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.IncorrectCredentialsException;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,8 +46,16 @@ public class UserController {
 			//登录
 			try{
 				subject.login(upToken);
-			}catch(Exception e){
-				System.out.println("登录失败"+"------>"+e.getMessage());
+			}catch(UnknownAccountException e){
+				System.out.println("用户名不存在");
+				return "redirect:/login.jsp?error=1";
+			}
+			catch(IncorrectCredentialsException e){
+				System.out.println("登录失败,密码错误"+"------>"+e.getMessage());
+				return "redirect:/login.jsp?error=2";
+			}catch(AuthenticationException e){
+				System.out.println("登陆失败，验证错误");
+				return "redirect:/login.jsp?error=3";
 			}
 		}
 		
