@@ -78,9 +78,10 @@
             	/css/** = anon
             	/js/** = anon
             	/img/** =anon
+            	/** = anon
             	/login = anon
             	/index = authc
-                /** = anon
+                
                 /manager.jsp = roles[manager]
                 /list.jsp = user
                 # everything else requires authentication:
