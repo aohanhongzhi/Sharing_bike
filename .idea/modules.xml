@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Sharing_bike.iml" filepath="$PROJECT_DIR$/Sharing_bike.iml" />
-      <module fileurl="file://C:\Users\Vodka\Desktop\创训\Sharing_bike\src\main\main.iml" filepath="C:\Users\Vodka\Desktop\创训\Sharing_bike\src\main\main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/main/main.iml" filepath="$PROJECT_DIR$/src/main/main.iml" />
     </modules>
   </component>
 </project>

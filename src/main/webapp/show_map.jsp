@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Vodka
-  Date: 2017/11/27
-  Time: 8:35
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page language="java" pageEncoding="utf-8" %>
 <%
     String path = request.getContextPath();
@@ -209,14 +203,15 @@
             <!--BEGIN TITLE & BREADCRUMB PAGE-->
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                 <div class="page-header pull-left">
-                    <div class="page-title">
-                        地图页面
+                    <div class="page-title" style="width: 100px;float: left">
+                        地图界面
                     </div>
+                    <ul class="active" style="font-size: 15px;width: 200px;float: left;margin-top: 15px"><a href="bike_map.jsp">单车地图</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</ul>
                 </div>
                 <ol class="breadcrumb page-breadcrumb pull-right">
                     <li><i class="fa fa-home"></i>&nbsp;<a href="index.jsp">Home</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="hidden"><a href="#">地图页面</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
-                    <li class="active">地图页面</li>
+                    <li class="hidden"><a href="#">地图界面</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                    <li class="active">地图界面</li>
                 </ol>
                 <div class="clearfix">
                 </div>
