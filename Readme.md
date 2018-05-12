@@ -1,6 +1,15 @@
 共享单车调度系统
 ====================
-
+ 
+# 开发语言
+* Java
+* Python
+* Javascipt
+ 
+# 系统框架
+* Spring+SpringMVC+MyBatis
+* 后期考虑更换分布式框架，还未学习。
+ 
 # 运行环境
 * Python3
 * Linux/Mac/Windows
