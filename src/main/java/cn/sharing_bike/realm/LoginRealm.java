@@ -26,14 +26,14 @@ public class LoginRealm extends AuthorizingRealm{
 
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(
-			AuthenticationToken arg0) throws AuthenticationException {
+			AuthenticationToken arg0) throws AuthenticationException{
 		//将AuthenticationToken强转
 		UsernamePasswordToken upToken=(UsernamePasswordToken) arg0;
 		//获取用户登录信息
 		String uname=upToken.getUsername();
 		//检测用户是否存在
 		boolean isExist=userService.isExist(uname);
-		
+		System.out.println(uname+isExist);
 		if(!isExist)
 			throw new UnknownAccountException("用户名不存在");
 		//进行用户密码验证

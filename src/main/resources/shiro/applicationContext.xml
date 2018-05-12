@@ -75,12 +75,13 @@
          <property name="filterChainDefinitions">
             <value>
             	<!-- 访问静态资源 -->
-            	/css/** = anon
-            	/js/** = anon
-            	/img/** =anon
-            	/** = anon
-            	/login = anon
+            	/font/** = anon
+            	/images/** = anon
+            	/script/** =anon
+            	/styles/** = anon
+            	/login.jsp = anon
             	/index = authc
+            	/index.jsp = authc
                 
                 /manager.jsp = roles[manager]
                 /list.jsp = user
