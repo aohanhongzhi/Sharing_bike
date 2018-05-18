@@ -41,7 +41,7 @@
         <nav id="topbar" role="navigation" style="margin-bottom: 0;" data-step="3" class="navbar navbar-default navbar-static-top">
             <div class="navbar-header">
                 <button type="button" data-toggle="collapse" data-target=".sidebar-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                <a id="logo" href="index.html" class="navbar-brand"><span class="fa fa-rocket"></span><span
+                <a id="logo" href="index.jsp" class="navbar-brand"><span class="fa fa-rocket"></span><span
                         class="logo-text">单车调度系统</span><span style="display: none" class="logo-text-icon">µ</span></a>
             </div>
             <div class="topbar-main"><a id="menu-toggle" href="#" class="hidden-xs"><i class="fa fa-bars"></i></a>
@@ -150,7 +150,7 @@
                     </i><span class="menu-title">管理中心</span></a>
 
                     </li>
-                    <li><a href="contact.jsp"><i class="fa fa-th-list fa-fw">
+                    <li><a href=""><i class="fa fa-th-list fa-fw">
                         <div class="icon-bg bg-blue"></div>
                     </i><span class="menu-title">与我联系</span></a>
 
@@ -306,14 +306,14 @@
                                     <div class="row">
                                         <div class="col-md-8">
                                             <h4 class="mbs">
-                                                近6个月单车使用情况</h4>
+                                                昨日单车使用情况</h4>
                                             <div id="area-chart-spline" style="width: 100%; height: 300px">
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <h4 class="mbm">
                                                 各地区情况</h4>
-                                            <span class="task-item">江宁区<small class="pull-right text-muted">40%</small><div
+                                            <span class="task-item">雨花台区<small class="pull-right text-muted">40%</small><div
                                                     class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 40%;" class="progress-bar progress-bar-orange">
@@ -336,7 +336,7 @@
                                                          style="width: 66%;" class="progress-bar progress-bar-yellow">
                                                         <span class="sr-only">66% Complete (success)</span></div>
                                                 </div>
-                                                </span><span>雨花台区<small class="pull-right text-muted">90%</small><div
+                                                </span><span>江宁区<small class="pull-right text-muted">90%</small><div
                                                 class="progress progress-sm">
                                                     <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
                                                          style="width: 90%;" class="progress-bar progress-bar-pink">
@@ -411,11 +411,7 @@
                     </div>
                 </div>
             </div>
-            <!--END CONTENT-->
-            <!--BEGIN FOOTER-->
-            <!--END FOOTER-->
         </div>
-        <!--END PAGE WRAPPER-->
     </div>
 </div>
 <script src="script/jquery-1.10.2.min.js"></script>
@@ -455,7 +451,5 @@
 <script src="script/charts-highchart-more.js"></script>
 <!--CORE JAVASCRIPT-->
 <script src="script/main.js"></script>
-
-
 </body>
 </html>

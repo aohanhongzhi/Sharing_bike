@@ -112,7 +112,7 @@
                     </i><span class="menu-title">管理中心</span></a>
 
                     </li>
-                    <li><a href="contact.jsp"><i class="fa fa-th-list fa-fw">
+                    <li><a href=""><i class="fa fa-th-list fa-fw">
                         <div class="icon-bg bg-blue"></div>
                     </i><span class="menu-title">与我联系</span></a>
 
@@ -178,64 +178,21 @@
                                 </div>
                                 <div class="col-sm-9 col-md-10">
                                     <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#home" data-toggle="tab"><span class="fa fa-inbox"></span>&nbsp;
-                                            预测信息</a></li>
-                                        <li><a href="#profile" data-toggle="tab"><span class="fa fa-user"></span>&nbsp;
-                                            当前信息</a></li>
+                                        <%--<li class="active"><a href="#home" data-toggle="tab"><span class="fa fa-inbox"></span>&nbsp;--%>
+                                        <%--预测信息</a></li>--%>
+                                        <li class="active"><a href="#profile" data-toggle="tab"><span
+                                                class="fa fa-user"></span>&nbsp;
+                                            Mobike单车</a></li>
                                         <li><a href="#messages" data-toggle="tab"><span class="fa fa-tags"></span>&nbsp;
-                                            历史信息</a></li>
+                                            ofo单车</a></li>
                                         <li><a href="#settings" data-toggle="tab"><span class="fa fa-plus man"></span></a></li>
                                     </ul>
                                     <div class="tab-content">
-                                        <div id="home" class="tab-pane fade in active">
-                                            <div class="list-group mail-box"><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a></div>
-                                        </div>
-                                        <div id="profile" class="tab-pane fade in">
-                                            <div class="list-group mail-box"><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a></div>
-                                        </div>
-                                        <div id="messages" class="tab-pane fade in">
-                                            <div class="list-group mail-box"><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#"
-                                                                                                                                                                                                                                                                                                                                                                                                     class="list-group-item"><input
-                                                    type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span
-                                                    class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;"
-                                                                                                                                                                                                                                                                                                                                                                                   class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
-                                                    style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
-                                                    class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
-                                                &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322 ...</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a></div>
-                                        </div>
-                                        <div id="settings" class="tab-pane fade in">
+                                        <div id="profile" class="tab-pane fade in active padder padder">
+                                            <div class="list-group mail-box" id="mobike"></div></div>
+                                        <div id="messages" class="tab-pane fade padder">
+                                            <div class="list-group mail-box" id="ofo"></div></div>
+                                        <div id="settings" class="tab-pane fade padder">
                                             <div class="list-group mail-box"><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; - &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span
                                                     class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span style="min-width: 120px; display: inline-block;" class="name">共享单车-Mobike</span><span>编号：0250130102#</span>&nbsp; -
                                                 &nbsp;<span style="font-size: 11px;" class="text-muted">坐标："distX": 118.78670197535591, "distY": 31.910499252092322</span><span class="time-badge">12:10 AM</span><span class="pull-right mrl"></span></a><a href="#" class="list-group-item"><input type="checkbox"/><span class="fa fa-star-o mrm mlm"></span><span
@@ -304,10 +261,31 @@
         <!--END PAGE WRAPPER-->
     </div>
 </div>
+</div>
+</div>
 <script src="script/jquery-1.10.2.min.js"></script>
 <script src="script/jquery-migrate-1.2.1.min.js"></script>
-<script src="script/jquery-ui.js"></script>
 <script src="script/bootstrap.min.js"></script>
+<script src="script/mobike-bikedata.js"></script>
+<script src="script/ofo-bikedata.js"></script>
+<script>
+    $(function(){
+        for (var i = 0; i < mobike_bikes.length; i += 1) {
+        $('#mobike').append(
+            "<a href=\"#\" class=\"list-group-item\"><input type=\"checkbox\"/><span class=\"fa fa-star-o mrm mlm\"></span><span style=\"min-width: 120px; display: inline-block;\" class=\"name\">共享单车-Mobike</span><span>编号：" + mobike_bikes[i].bikeid + "</span>&nbsp; - &nbsp;<span style=\"font-size: 11px;\" class=\"text-muted\">坐标："+mobike_bikes[i].center.split(',')
+            +"</span><span\n" +
+            "        class=\"time-badge\">12:10 AM</span><span class=\"pull-right mrl\"></span></a>"
+        )}
+
+        for (var i = 0; i < ofo_bikes.length; i += 1) {
+            $('#ofo').append(
+                "<a href=\"#\" class=\"list-group-item\"><input type=\"checkbox\"/><span class=\"fa fa-star-o mrm mlm\"></span><span style=\"min-width: 120px; display: inline-block;\" class=\"name\">共享单车-ofo</span><span>编号：" + ofo_bikes[i].bikeid + "</span>&nbsp; - &nbsp;<span style=\"font-size: 11px;\" class=\"text-muted\">坐标："+ofo_bikes[i].center.split(',')
+                +"</span><span\n" +
+                "        class=\"time-badge\">12:10 AM</span><span class=\"pull-right mrl\"></span></a>"
+            )}
+    })
+</script>
+<script src="script/jquery-ui.js"></script>
 <script src="script/bootstrap-hover-dropdown.js"></script>
 <script src="script/html5shiv.js"></script>
 <script src="script/respond.min.js"></script>
@@ -342,6 +320,5 @@
 <script src="script/charts-highchart-more.js"></script>
 <!--CORE JAVASCRIPT-->
 <script src="script/main.js"></script>
-
 </body>
 </html>

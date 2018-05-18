@@ -127,6 +127,7 @@
             </div>
         </nav>
         <div id="page-wrapper">
+            <!--BEGIN TITLE & BREADCRUMB PAGE-->
             <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
                 <div class="page-header pull-left">
                     <div class="page-title">
@@ -135,68 +136,104 @@
                 </div>
                 <ol class="breadcrumb page-breadcrumb pull-right">
                     <li><i class="fa fa-home"></i>&nbsp;<a>管理中心</a>&nbsp;&nbsp;<i
-                            class="fa fa-angle-right"></i>&nbsp;&nbsp;
+                            class="fa fa-angle-right"></i>&nbsp;&nbsp;<a>统计数据</a>&nbsp;&nbsp;
                     </li>
-                    全部日期记录
                 </ol>
                 <div class="clearfix">
                 </div>
             </div>
             <div class="page-content">
                 <div id="tab-general">
-                    <div class="panel panel-red" style="background:#FFF;width: 100%;">
-                        <div class="panel-heading">使用量预测</div>
+                    <div id="p1" style="float:left;width:500px;height:300px"></div>
+                    <div id="p2" style="float:left;width:500px;height:300px;margin-left: 50px"></div>
+                    <div class="panel panel-blue" style="background:#FFF;float: left;width: 100%;margin-top: 10px">
+                        <div class="panel-heading">借出量统计</div>
                         <div class="panel-body">
-                            <div id="predict"></div>
-                        </div>
-                    </div>
-                    <div class="panel panel-green" style="margin-top: 30px">
-                        <div class="panel-heading">全部日期记录</div>
-                        <div class="panel-body">
-                            <div class="form-group" style="float: right">
-                                <p style="float: left;margin-top: 10px;font-size: 15px">查找:&nbsp;&nbsp;</p>
-                                <input type="text" class="form-control" id="name" placeholder="请输入形如'年-月-日'的日期" style="float: left;height: 35px;width: 300px">
-                                <button type="submit" style="float: left;height: 35px" class="btn btn-sm bg-light rounded"><i class="fa fa-search"></i></button>
-                            </div>
                             <table class="table table-hover table-bordered">
                                 <thead>
                                 <tr>
-                                    <th>日期</th>
-                                    <th>区域</th>
-                                    <th>单车类型</th>
-                                    <th>详细信息</th>
+                                    <th>时间段</th>
+                                    <th>00:00-04:00</th>
+                                    <th>04:00-08:00</th>
+                                    <th>08:00-12:00</th>
+                                    <th>12:00-16:00</th>
+                                    <th>16:00-20:00</th>
+                                    <th>20:00-00:00</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                     <td>2018-04-17</td>
-                                     <td>江宁区</td>
-                                     <td>Mobike</td>
-                                     <td onclick="window.location.href='detail.jsp'">查看</td>
-                                </tbody>
-                                <tbody>
-                                    <td>2018-04-16</td>
-                                    <td>江宁区</td>
-                                    <td>Mobike</td>
-                                    <td>查看</td>
-                                </tbody>
-                                <tbody>
-                                     <td>2018-04-15</td>
-                                     <td>江宁区</td>
-                                     <td>Mobike</td>
-                                     <td>查看</td>
-                                </tbody>
-                                <tbody>
-                                     <td>2018-04-14</td>
-                                     <td>江宁区</td>
-                                     <td>Mobike</td>
-                                     <td>查看</td>
+                                <tr>
+                                    <td>数量/辆</td>
+                                    <td>100</td>
+                                    <td>820</td>
+                                    <td>1045</td>
+                                    <td>658</td>
+                                    <td>999</td>
+                                    <td>421</td>
+                                </tr>
                                 </tbody>
                             </table>
-                            <ul class="pagination mtm mbm" style="float:right;">
-                                <li class="disabled"><a href="#">«</a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">»</a></li>
-                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-violet" style="background:#FFF;float: left;width: 100%;">
+                        <div class="panel-heading">还入量统计</div>
+                        <div class="panel-body">
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                <tr>
+                                    <th>时间段</th>
+                                    <th>00:00-04:00</th>
+                                    <th>04:00-08:00</th>
+                                    <th>08:00-12:00</th>
+                                    <th>12:00-16:00</th>
+                                    <th>16:00-20:00</th>
+                                    <th>20:00-00:00</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>数量/辆</td>
+                                    <td>89</td>
+                                    <td>670</td>
+                                    <td>1200</td>
+                                    <td>613</td>
+                                    <td>855</td>
+                                    <td>514</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-red" style="background:#FFF;float: left;width: 100%;margin-top: 10px">
+                        <div class="panel-heading">使用时长统计</div>
+                        <div class="panel-body">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>使用时间长度</th>
+                                    <th>15分钟之内</th>
+                                    <th>15-30分钟</th>
+                                    <th>30-45分钟</th>
+                                    <th>45分钟-1小时</th>
+                                    <th>1小时-1个半小时</th>
+                                    <th>1个半小时-2个小时</th>
+                                    <th>2个小时以上</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>使用人数/</td>
+                                    <td>1815</td>
+                                    <td>1031</td>
+                                    <td>402</td>
+                                    <td>291</td>
+                                    <td>102</td>
+                                    <td>51</td>
+                                    <td>21</td>
+                                    <td>7</td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -206,105 +243,79 @@
 </div>
 <script>
     $(function () {
-        $('#predict').highcharts({
+        $('#p1').highcharts({
             chart: {
-                zoomType: 'xy'
+                type: 'areaspline'
             },
             title: {
-                text: '未来5天单车使用量预测'
+                text: '昨日江宁区单车使用情况'
             },
-            xAxis: [{
+            xAxis: {
                 categories: [
-                    '2018-04-18', '2018-04-19', '2018-04-20','2018-04-21','2018-04-22',
+                    '0-4点',
+                    '4-8点',
+                    '8-12点',
+                    '12-16点',
+                    '16-20点',
+                    '20-0点',
                 ],
-                crosshair: true
-            }],
-            yAxis: [{ // Primary yAxis
-                labels: {
-                    format: '{value} 辆',
-                    style: {
-                        color: Highcharts.getOptions().colors[2]
-                    }
-                },
-                title: {
-                    text: '',
-                    style: {
-                        color: Highcharts.getOptions().colors[2]
-                    }
-                },
-                opposite: true
-            }, { // Secondary yAxis
-                gridLineWidth: 0,
-                title: {
-                    text: '净出入量',
-                    style: {
-                        color: Highcharts.getOptions().colors[0]
-                    }
-                },
-                labels: {
-                    format: '{value} 辆',
-                    style: {
-                        color: Highcharts.getOptions().colors[0]
-                    }
-                }
-            }, { // Tertiary yAxis
-                gridLineWidth: 0,
-                title: {
-                    text: '借出/还入量',
-                    style: {
-                        color: Highcharts.getOptions().colors[1]
-                    }
-                },
-                labels: {
-                    format: '{value} 辆',
-                    style: {
-                        color: Highcharts.getOptions().colors[1]
-                    }
-                },
-                opposite: true
-            }],
-            tooltip: {
-                shared: true
             },
-            legend: {
-                layout: 'vertical',
-                align: 'left',
-                x: 80,
-                verticalAlign: 'top',
-                y: 55,
-                floating: true,
-                backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
+            yAxis: {
+                title: {
+                    text: '使用量/辆'
+                }
+            },
+            tooltip: {
+                shared: true,
+                valueSuffix: '辆'
+            },
+            credits: {
+                enabled: false
+            },
+            plotOptions: {
+                areaspline: {
+                    fillOpacity: 0.5
+                }
             },
             series: [{
-                name: '净出入量',
-                type: 'column',
-                yAxis: 1,
-                data: [18,-32,28,21,0],
-                tooltip: {
-                    valueSuffix: ' 辆'
-                }
+                name: '借出量',
+                data: [100,820,1045,658,999,421]
             }, {
                 name: '还入量',
-                type: 'spline',
-                yAxis: 2,
-                data: [3978,3991,4000,3921,3927],
-                marker: {
-                    enabled: false
-                },
-                dashStyle: 'shortdot',
-                tooltip: {
-                    valueSuffix: ' 辆'
-                }
-            }, {
-                name: '借出量',
-                type: 'spline',
-                data: [3966,3999,3997,3900,3920],
-                tooltip: {
-                    valueSuffix: ' 辆'
-                }
+                data: [89, 670, 1200, 613, 855, 514]
             }]
         });
-    })
+        $('#p2').highcharts({
+            chart: {
+                type: 'bar'
+            },
+            title: {
+                text: '使用时长统计'
+            },
+            xAxis: {
+                categories: ['0-15', '15-30', '30-45', '45-60',
+                    '60-90', '90-120', '120-180', '180+ ']
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: '使用时长'
+                }
+            },
+            legend: {
+                reversed: true
+            },
+            plotOptions: {
+                series: {
+                    stacking: 'normal'
+                }
+            },
+            series: [{
+                name: '使用人数',
+                data: [1815,1031,402,291,102,51,21,7]
+            }]
+        });
+    });
 </script>
 </body>
 </html>

@@ -144,7 +144,7 @@
                     </i><span class="menu-title">管理中心</span></a>
 
                     </li>
-                    <li><a href="contact.jsp"><i class="fa fa-th-list fa-fw">
+                    <li><a href=""><i class="fa fa-th-list fa-fw">
                         <div class="icon-bg bg-blue"></div>
                     </i><span class="menu-title">与我联系</span></a>
 
